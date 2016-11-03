@@ -1,17 +1,22 @@
+//lab 7
+
+
+
 var shoppingList = 
     [
     {
       name: "lettuce",
-      price: 2
+      price: 2.00
 },
     {
       name: "milk",
-      price: 4
+      price: 4.10
 },
     {
       name: "chocolate",
-      price: 3
-}, ];
+      price: 3.50
+}, 
+];
 
 for (var i=0; i<shoppingList.length; i++){
   console.log(shoppingList[i].name, "$" + shoppingList[i].price);
@@ -27,4 +32,4 @@ for (var i=0; i<shoppingList.length; i++){
        return total;
  };
 
-   console.log("$" + shoppingList.totalAmount());
+   console.log("Total $" + shoppingList.totalAmount());
