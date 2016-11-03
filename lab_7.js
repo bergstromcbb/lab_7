@@ -19,7 +19,7 @@ var shoppingList =
 ];
 
 for (var i=0; i<shoppingList.length; i++){
-  console.log(shoppingList[i].name, "$" + shoppingList[i].price);
+  console.log(shoppingList[i].name, "$" + shoppingList[i].price.toFixed(2));
 }
 
  shoppingList.totalAmount = function(){
@@ -29,7 +29,7 @@ for (var i=0; i<shoppingList.length; i++){
         total = total + shoppingList[i].price;
   //    console.log(total);
              }
-       return total;
+       return total.toFixed(2);
  };
 
    console.log("Total $" + shoppingList.totalAmount());
